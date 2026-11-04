@@ -138,6 +138,7 @@ data class VisitWithPhotos(
 data class ChallengePubRow(
     val pubId: String,
     val source: PubSource,
+    val sourceRef: String?,
     val name: String,
     val street: String?,
     val lat: Double,

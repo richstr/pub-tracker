@@ -20,6 +20,7 @@ import androidx.compose.material.icons.automirrored.filled.ArrowBack
 import androidx.compose.material.icons.automirrored.filled.List
 import androidx.compose.material.icons.filled.Add
 import androidx.compose.material.icons.filled.Close
+import androidx.compose.material.icons.filled.Edit
 import androidx.compose.material.icons.filled.Place
 import androidx.compose.material.icons.filled.Search
 import androidx.compose.material3.Badge
@@ -68,6 +69,7 @@ fun ChallengeScreen(
     onOpenPub: (String) -> Unit,
     onCheckIn: (String) -> Unit,
     onAddPub: () -> Unit,
+    onEditRadius: () -> Unit,
 ) {
     val vm = appViewModel { ChallengeViewModel(it.challengeRepository, challengeId) }
     val ui by vm.ui.collectAsStateWithLifecycle()
@@ -92,6 +94,9 @@ fun ChallengeScreen(
                     IconButton(onClick = onBack) { Icon(Icons.AutoMirrored.Filled.ArrowBack, contentDescription = "Back") }
                 },
                 actions = {
+                    IconButton(onClick = onEditRadius) {
+                        Icon(Icons.Filled.Edit, contentDescription = "Edit challenge radius")
+                    }
                     IconButton(onClick = {
                         searchOpen = !searchOpen
                         if (!searchOpen) searchQuery = ""

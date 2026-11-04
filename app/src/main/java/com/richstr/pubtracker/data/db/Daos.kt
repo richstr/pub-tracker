@@ -36,6 +36,9 @@ interface ChallengeDao {
     @Insert
     suspend fun insert(challenge: ChallengeEntity)
 
+    @Query("UPDATE challenges SET radiusMetres = :radiusMetres, lastCheckedAt = :now, updatedAt = :now WHERE id = :id AND deletedAt IS NULL")
+    suspend fun updateRadius(id: String, radiusMetres: Int, now: Long)
+
     @Query("UPDATE challenges SET deletedAt = :now, updatedAt = :now WHERE id = :id")
     suspend fun softDelete(id: String, now: Long)
 
@@ -68,6 +71,7 @@ interface ChallengePubDao {
     @Query(
         """
         SELECT p.id AS pubId, p.source AS source,
+            p.sourceRef AS sourceRef,
             COALESCE(o.name, p.name) AS name,
             COALESCE(o.street, p.street) AS street,
             COALESCE(o.lat, p.lat) AS lat,
@@ -84,6 +88,32 @@ interface ChallengePubDao {
         """
     )
     fun observeForChallenge(challengeId: String): Flow<List<ChallengePubRow>>
+
+    @Query(
+        """
+        SELECT p.id AS pubId, p.source AS source, p.sourceRef AS sourceRef,
+            COALESCE(o.name, p.name) AS name,
+            COALESCE(o.street, p.street) AS street,
+            COALESCE(o.lat, p.lat) AS lat,
+            COALESCE(o.lon, p.lon) AS lon,
+            COALESCE(o.category, p.category) AS category,
+            COALESCE(o.status, p.status) AS status,
+            cp.excluded AS excluded, cp.addedAt AS addedAt,
+            (SELECT COUNT(*) FROM visits v WHERE v.pubId = p.id AND v.deletedAt IS NULL) AS visitCount
+        FROM challenge_pubs cp
+        JOIN pubs p ON p.id = cp.pubId
+        LEFT JOIN pub_overrides o ON o.pubId = p.id
+        WHERE cp.challengeId = :challengeId AND p.deletedAt IS NULL
+        ORDER BY name COLLATE NOCASE
+        """
+    )
+    suspend fun getForChallenge(challengeId: String): List<ChallengePubRow>
+
+    @Query("DELETE FROM challenge_pubs WHERE challengeId = :challengeId AND pubId NOT IN (:retainedPubIds)")
+    suspend fun deleteNotIn(challengeId: String, retainedPubIds: List<String>)
+
+    @Query("DELETE FROM challenge_pubs WHERE challengeId = :challengeId")
+    suspend fun deleteAllForChallenge(challengeId: String)
 }
 
 @Dao
