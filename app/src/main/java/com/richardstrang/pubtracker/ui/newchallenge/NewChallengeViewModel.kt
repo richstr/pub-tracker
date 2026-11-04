@@ -124,11 +124,6 @@ class NewChallengeViewModel(private val repository: ChallengeRepository) : ViewM
         viewModelScope.launch {
             val id = repository.createChallenge(
                 name = s.name,
-                lat = s.centreLat,
-                lon = s.centreLon,
-                radiusMetres = s.radiusMetres,
-                includePubs = s.includePubs,
-                includeBars = s.includeBars,
                 preview = preview,
                 alreadyVisitedKeys = s.alreadyVisited,
             )

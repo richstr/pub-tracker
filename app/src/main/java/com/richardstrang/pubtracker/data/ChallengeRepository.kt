@@ -34,7 +34,13 @@ data class PreviewItem(
     val alreadyVisited: Boolean,
 )
 
+/** Search results plus the exact area searched, so the saved challenge always matches its pubs. */
 data class ChallengePreview(
+    val lat: Double,
+    val lon: Double,
+    val radiusMetres: Int,
+    val includePubs: Boolean,
+    val includeBars: Boolean,
     val places: List<OsmPlace>,
     val manualPubs: List<PubEntity>,
     val items: List<PreviewItem>,
@@ -110,16 +116,20 @@ class ChallengeRepository(
                 alreadyVisited = pub.id in visited,
             )
         }
-        return ChallengePreview(places, manual, items.sortedBy { it.name.lowercase() })
+        return ChallengePreview(
+            lat = lat,
+            lon = lon,
+            radiusMetres = radiusMetres,
+            includePubs = includePubs,
+            includeBars = includeBars,
+            places = places,
+            manualPubs = manual,
+            items = items.sortedBy { it.name.lowercase() },
+        )
     }
 
     suspend fun createChallenge(
         name: String,
-        lat: Double,
-        lon: Double,
-        radiusMetres: Int,
-        includePubs: Boolean,
-        includeBars: Boolean,
         preview: ChallengePreview,
         alreadyVisitedKeys: Set<String>,
     ): String = db.withTransaction {
@@ -130,11 +140,11 @@ class ChallengeRepository(
         val challenge = ChallengeEntity(
             id = newId(),
             name = name.trim(),
-            centreLat = lat,
-            centreLon = lon,
-            radiusMetres = radiusMetres,
-            includePubs = includePubs,
-            includeBars = includeBars,
+            centreLat = preview.lat,
+            centreLon = preview.lon,
+            radiusMetres = preview.radiusMetres,
+            includePubs = preview.includePubs,
+            includeBars = preview.includeBars,
             lastCheckedAt = now,
             createdAt = now,
             updatedAt = now,

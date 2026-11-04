@@ -1,6 +1,17 @@
 package com.richardstrang.pubtracker.ui.map
 
 import android.graphics.RectF
+import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material3.HorizontalDivider
+import androidx.compose.material3.IconButton
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.Surface
+import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.DisposableEffect
 import androidx.compose.runtime.LaunchedEffect
@@ -9,7 +20,10 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberUpdatedState
 import androidx.compose.runtime.setValue
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.semantics.contentDescription
+import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.unit.dp
@@ -161,7 +175,29 @@ fun PubMap(
         if (request.animate) m.animateCamera(update) else m.moveCamera(update)
     }
 
-    AndroidView(factory = { mapView }, modifier = modifier)
+    Box(modifier) {
+        AndroidView(factory = { mapView }, modifier = Modifier.fillMaxSize())
+        ZoomControls(
+            onZoomIn = { map?.animateCamera(CameraUpdateFactory.zoomIn()) },
+            onZoomOut = { map?.animateCamera(CameraUpdateFactory.zoomOut()) },
+            modifier = Modifier.align(Alignment.TopEnd).padding(12.dp),
+        )
+    }
+}
+
+@Composable
+private fun ZoomControls(onZoomIn: () -> Unit, onZoomOut: () -> Unit, modifier: Modifier = Modifier) {
+    Surface(modifier, shape = RoundedCornerShape(8.dp), shadowElevation = 4.dp) {
+        Column(Modifier.width(48.dp), horizontalAlignment = Alignment.CenterHorizontally) {
+            IconButton(onClick = onZoomIn, modifier = Modifier.semantics { contentDescription = "Zoom in" }) {
+                Text("+", style = MaterialTheme.typography.titleLarge)
+            }
+            HorizontalDivider()
+            IconButton(onClick = onZoomOut, modifier = Modifier.semantics { contentDescription = "Zoom out" }) {
+                Text("−", style = MaterialTheme.typography.titleLarge)
+            }
+        }
+    }
 }
 
 private fun addOverlayLayers(style: Style) {
