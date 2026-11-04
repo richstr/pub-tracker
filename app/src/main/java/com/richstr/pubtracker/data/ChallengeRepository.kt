@@ -46,6 +46,13 @@ data class ChallengePreview(
     val items: List<PreviewItem>,
 )
 
+data class RadiusChangePreview(
+    val challenge: ChallengeEntity,
+    val results: ChallengePreview,
+    val addedCount: Int,
+    val removedCount: Int,
+)
+
 private const val MANUAL_KEY_PREFIX = "manual:"
 
 class ChallengeRepository(
@@ -126,6 +133,60 @@ class ChallengeRepository(
             manualPubs = manual,
             items = items.sortedBy { it.name.lowercase() },
         )
+    }
+
+    suspend fun previewRadiusChange(challengeId: String, radiusMetres: Int): RadiusChangePreview {
+        val challenge = challengeDao.get(challengeId) ?: error("Challenge no longer exists.")
+        val currentKeys = challengePubDao.getForChallenge(challengeId).map { row ->
+            row.sourceRef ?: MANUAL_KEY_PREFIX + row.pubId
+        }.toSet()
+        val results = preview(
+            lat = challenge.centreLat,
+            lon = challenge.centreLon,
+            radiusMetres = radiusMetres,
+            includePubs = challenge.includePubs,
+            includeBars = challenge.includeBars,
+        )
+        val nextKeys = results.items.map { it.key }.toSet()
+        return RadiusChangePreview(
+            challenge = challenge,
+            results = results,
+            addedCount = (nextKeys - currentKeys).size,
+            removedCount = (currentKeys - nextKeys).size,
+        )
+    }
+
+    suspend fun applyRadiusChange(change: RadiusChangePreview) = db.withTransaction {
+        val challenge = challengeDao.get(change.challenge.id) ?: error("Challenge no longer exists.")
+        val now = System.currentTimeMillis()
+        val results = change.results
+        val pubIdByKey = upsertOsmPlaces(results.places, now) +
+            results.manualPubs.associate { (MANUAL_KEY_PREFIX + it.id) to it.id }
+
+        challengePubDao.insertAll(
+            pubIdByKey.values.distinct().map { pubId ->
+                ChallengePubEntity(challenge.id, pubId, excluded = false, addedAt = now, createdAt = now, updatedAt = now)
+            }
+        )
+
+        val retainedPubIds = challengePubDao.getForChallenge(challenge.id)
+            .filter { row ->
+                val categoryIncluded = if (row.category == PubCategory.BAR) challenge.includeBars else challenge.includePubs
+                categoryIncluded && Geo.distanceMetres(
+                    results.lat,
+                    results.lon,
+                    row.lat,
+                    row.lon,
+                ) <= results.radiusMetres
+            }
+            .map { it.pubId }
+
+        if (retainedPubIds.isEmpty()) {
+            challengePubDao.deleteAllForChallenge(challenge.id)
+        } else {
+            challengePubDao.deleteNotIn(challenge.id, retainedPubIds)
+        }
+        challengeDao.updateRadius(challenge.id, results.radiusMetres, now)
     }
 
     suspend fun createChallenge(

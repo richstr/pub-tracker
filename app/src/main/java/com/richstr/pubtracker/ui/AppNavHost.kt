@@ -6,6 +6,7 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.toRoute
 import com.richstr.pubtracker.ui.challenge.ChallengeScreen
+import com.richstr.pubtracker.ui.challenge.EditRadiusScreen
 import com.richstr.pubtracker.ui.checkin.CheckInScreen
 import com.richstr.pubtracker.ui.editpub.EditPubScreen
 import com.richstr.pubtracker.ui.home.HomeScreen
@@ -21,6 +22,9 @@ object NewChallengeRoute
 
 @Serializable
 data class ChallengeRoute(val challengeId: String)
+
+@Serializable
+data class EditRadiusRoute(val challengeId: String)
 
 @Serializable
 data class PubRoute(val pubId: String, val challengeId: String? = null)
@@ -61,7 +65,12 @@ fun AppNavHost() {
                 onOpenPub = { nav.navigate(PubRoute(it, route.challengeId)) },
                 onCheckIn = { nav.navigate(CheckInRoute(it)) },
                 onAddPub = { nav.navigate(EditPubRoute(challengeId = route.challengeId)) },
+                onEditRadius = { nav.navigate(EditRadiusRoute(route.challengeId)) },
             )
+        }
+        composable<EditRadiusRoute> { entry ->
+            val route = entry.toRoute<EditRadiusRoute>()
+            EditRadiusScreen(challengeId = route.challengeId, onBack = back, onSaved = back)
         }
         composable<PubRoute> { entry ->
             val route = entry.toRoute<PubRoute>()
