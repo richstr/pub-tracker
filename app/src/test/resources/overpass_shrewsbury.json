@@ -1,0 +1,1720 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-11-03T16:48:34Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 245034990,
+  "lat": 52.7077590,
+  "lon": -2.7550805,
+  "tags": {
+    "addr:city": "Shrewsbury",
+    "addr:country": "GB",
+    "addr:housenumber": "1",
+    "addr:postcode": "SY1 1HF",
+    "addr:street": "Shoplatch",
+    "amenity": "pub",
+    "fhrs:authority": "Shropshire",
+    "fhrs:id": "104318",
+    "fhrs:local_authority_id": "35505",
+    "food": "yes",
+    "name": "Hole In The Wall",
+    "opening_hours": "Su-Th 11:00-23:00; Fr,Sa 11:00-24:00",
+    "postal_code": "SY1 1HF",
+    "source:addr": "FHRS Open Data"
+  }
+},
+{
+  "type": "node",
+  "id": 245041490,
+  "lat": 52.7094555,
+  "lon": -2.7564076,
+  "tags": {
+    "addr:city": "Shrewsbury",
+    "addr:country": "GB",
+    "addr:housenumber": "48",
+    "addr:postcode": "SY1 1PP",
+    "addr:street": "Mardol",
+    "amenity": "pub",
+    "fhrs:authority": "Shropshire",
+    "fhrs:id": "1683099",
+    "fhrs:local_authority_id": "23/00843/COMM",
+    "name": "King's Head",
+    "source:addr": "FHRS Open Data"
+  }
+},
+{
+  "type": "node",
+  "id": 253178850,
+  "lat": 52.7042947,
+  "lon": -2.7464265,
+  "tags": {
+    "addr:postcode": "SY3 7DE",
+    "amenity": "pub",
+    "name": "Cross Foxes"
+  }
+},
+{
+  "type": "node",
+  "id": 258056772,
+  "lat": 52.7068635,
+  "lon": -2.7525564,
+  "tags": {
+    "addr:city": "Shrewsbury",
+    "addr:housenumber": "50",
+    "addr:postcode": "SY1 1ST",
+    "addr:street": "High Street",
+    "amenity": "pub",
+    "brand": "Marston's",
+    "brand:wikidata": "Q6773982",
+    "fhrs:authority": "Shropshire",
+    "fhrs:id": "103729",
+    "fhrs:local_authority_id": "34993",
+    "level": "0",
+    "name": "The Wheatsheaf",
+    "source:addr": "FHRS Open Data"
+  }
+},
+{
+  "type": "node",
+  "id": 259007599,
+  "lat": 52.7038325,
+  "lon": -2.7493954,
+  "tags": {
+    "addr:city": "Shrewsbury",
+    "addr:country": "GB",
+    "addr:housenumber": "115",
+    "addr:postcode": "SY3 7DX",
+    "addr:street": "Longden Coleham",
+    "amenity": "pub",
+    "brand": "Marston's",
+    "brand:wikidata": "Q6773982",
+    "fhrs:authority": "Shropshire",
+    "fhrs:id": "103857",
+    "fhrs:local_authority_id": "35072",
+    "name": "The Coleham Tap",
+    "old_name": "The Crown",
+    "website": "https://www.colehamtapshrewsbury.co.uk/",
+    "wikidata": "Q26546187"
+  }
+},
+{
+  "type": "node",
+  "id": 263458271,
+  "lat": 52.6978841,
+  "lon": -2.7603893,
+  "tags": {
+    "addr:city": "Shrewsbury",
+    "addr:country": "GB",
+    "addr:housenumber": "108",
+    "addr:postcode": "SY3 7HS",
+    "addr:street": "Longden Road",
+    "amenity": "pub",
+    "fhrs:authority": "Shropshire",
+    "fhrs:id": "1488842",
+    "fhrs:local_authority_id": "22/00310/COMM",
+    "name": "The Red Barn"
+  }
+},
+{
+  "type": "node",
+  "id": 308350402,
+  "lat": 52.7161722,
+  "lon": -2.7532835,
+  "tags": {
+    "addr:city": "Shrewsbury",
+    "addr:country": "GB",
+    "addr:housenumber": "32",
+    "addr:postcode": "SY1 2DZ",
+    "addr:street": "Coton Hill",
+    "alt_name": "The Woody",
+    "amenity": "pub",
+    "fhrs:authority": "Shropshire",
+    "fhrs:id": "103448",
+    "fhrs:local_authority_id": "34767",
+    "name": "The Woodman",
+    "opening_hours": "Mo-Fr 14:00-24:00; Sa,Su 12:00-24:00",
+    "outdoor_seating": "yes",
+    "real_ale": "yes",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 308350406,
+  "lat": 52.7158312,
+  "lon": -2.7534647,
+  "tags": {
+    "addr:city": "Shrewsbury",
+    "addr:country": "GB",
+    "addr:postcode": "SY1 2DZ",
+    "addr:street": "Coton Hill",
+    "amenity": "pub",
+    "fhrs:authority": "Shropshire",
+    "fhrs:id": "1556165",
+    "fhrs:local_authority_id": "22/00751/COMM",
+    "name": "The Royal Oak",
+    "opening_hours": "Mo-Su 12:00-23:00",
+    "outdoor_seating": "yes",
+    "real_ale": "yes",
+    "real_cider": "yes",
+    "real_fire": "yes",
+    "wheelchair": "limited",
+    "wikidata": "Q26561060"
+  }
+},
+{
+  "type": "node",
+  "id": 310722095,
+  "lat": 52.7055721,
+  "lon": -2.7354649,
+  "tags": {
+    "addr:city": "Shrewsbury",
+    "addr:housenumber": "115",
+    "addr:postcode": "SY2 6BA",
+    "addr:street": "Abbey Foregate",
+    "amenity": "pub",
+    "brand": "Marston's",
+    "brand:wikidata": "Q6773982",
+    "fhrs:authority": "Shropshire",
+    "fhrs:id": "1659124",
+    "fhrs:local_authority_id": "23/00663/COMM",
+    "name": "The Old Bell",
+    "source:addr": "FHRS Open Data",
+    "wikidata": "Q26538787"
+  }
+},
+{
+  "type": "node",
+  "id": 348004111,
+  "lat": 52.7134835,
+  "lon": -2.7495012,
+  "tags": {
+    "disused:amenity": "pub",
+    "name": "The Britannia",
+    "note": "closed 2021"
+  }
+},
+{
+  "type": "node",
+  "id": 447878280,
+  "lat": 52.7092537,
+  "lon": -2.7587329,
+  "tags": {
+    "addr:city": "Shrewsbury",
+    "addr:country": "GB",
+    "addr:postcode": "SY1 1RT",
+    "addr:street": "Lower Claremont Bank",
+    "amenity": "pub",
+    "brand": "Wetherspoon",
+    "brand:wikidata": "Q6109362",
+    "contact:website": "https://www.jdwetherspoon.com/pubs/all-pubs/england/shropshire/montgomerys-tower-shrewsbury",
+    "dog": "no",
+    "fhrs:authority": "Shropshire",
+    "fhrs:id": "127069",
+    "fhrs:local_authority_id": "56145",
+    "name": "Montgomery's Tower",
+    "opening_hours": "Su-Th 08:00-24:00, Fr,Sa 08:00-01:00",
+    "smoking": "separated",
+    "source:postcode": "FHRS Open Data",
+    "website:menu": "https://order.jdwetherspoon.com/venue/jdw/6041/menus"
+  }
+},
+{
+  "type": "node",
+  "id": 447887645,
+  "lat": 52.7075536,
+  "lon": -2.7527402,
+  "tags": {
+    "addr:city": "Shrewsbury",
+    "addr:postcode": "SY1 1UR",
+    "addr:street": "Fish Street",
+    "amenity": "pub",
+    "fhrs:authority": "Shropshire",
+    "fhrs:id": "1577345",
+    "fhrs:local_authority_id": "22/00803/COMM",
+    "name": "The Three Fishes",
+    "source:postcode": "FHRS Open Data",
+    "wheelchair": "limited",
+    "wikidata": "Q26539507"
+  }
+},
+{
+  "type": "node",
+  "id": 559993019,
+  "lat": 52.7120507,
+  "lon": -2.7504331,
+  "tags": {
+    "addr:city": "Shrewsbury",
+    "addr:country": "GB",
+    "addr:housenumber": "12",
+    "addr:postcode": "SY1 2DJ",
+    "addr:street": "Castle Foregate",
+    "amenity": "pub",
+    "fhrs:authority": "Shropshire",
+    "fhrs:id": "1410654",
+    "fhrs:local_authority_id": "21/00691/COMM",
+    "name": "The Tumbledown Hotel And Albion Inn",
+    "rooms": "yes",
+    "source:addr": "FHRS Open Data",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 638345703,
+  "lat": 52.7067397,
+  "lon": -2.7408208,
+  "tags": {
+    "addr:city": "Shrewsbury",
+    "addr:country": "GB",
+    "addr:housenumber": "171",
+    "addr:postcode": "SY2 6AL",
+    "addr:street": "Abbey Foregate",
+    "amenity": "pub",
+    "fhrs:authority": "Shropshire",
+    "fhrs:id": "103021",
+    "fhrs:local_authority_id": "34439",
+    "name": "The Dun Cow",
+    "source:addr": "FHRS Open Data",
+    "wikidata": "Q26538861"
+  }
+},
+{
+  "type": "node",
+  "id": 1708425937,
+  "lat": 52.7075576,
+  "lon": -2.7555404,
+  "tags": {
+    "addr:city": "Shrewsbury",
+    "addr:country": "GB",
+    "addr:housenumber": "9",
+    "addr:postcode": "SY1 1HF",
+    "addr:street": "Shoplatch",
+    "amenity": "bar",
+    "fhrs:authority": "Shropshire",
+    "fhrs:local_authority_id": "196956",
+    "name": "Market Hall Tavern",
+    "wheelchair": "limited",
+    "wifi": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2000332324,
+  "lat": 52.7062587,
+  "lon": -2.7499219,
+  "tags": {
+    "addr:city": "Shrewsbury",
+    "addr:country": "GB",
+    "addr:housenumber": "26",
+    "addr:postcode": "SY1 1XD",
+    "addr:street": "Wyle Cop",
+    "amenity": "bar",
+    "brewery": "no",
+    "check_date": "2026-03-16",
+    "email": "cellars.shop@tanners-wines.co.uk",
+    "fhrs:authority": "Shropshire",
+    "fhrs:id": "1540718",
+    "fhrs:local_authority_id": "22/00564/COMM",
+    "name": "A Taste of Tanners",
+    "phone": "+44 1743 234500",
+    "website": "https://www.tanners-wines.co.uk/pages/shrewsbury"
+  }
+},
+{
+  "type": "node",
+  "id": 2050027346,
+  "lat": 52.7118508,
+  "lon": -2.7504925,
+  "tags": {
+    "addr:housenumber": "4",
+    "addr:postcode": "SY1 2DJ",
+    "addr:street": "Castle Foregate",
+    "disused:amenity": "pub",
+    "fhrs:authority": "Shropshire",
+    "fhrs:id": "81676",
+    "fhrs:local_authority_id": "199440",
+    "name": "Station Hotel",
+    "note": "Closed during second lockdown",
+    "source:addr": "FHRS Open Data"
+  }
+},
+{
+  "type": "node",
+  "id": 2773250023,
+  "lat": 52.7075795,
+  "lon": -2.7545862,
+  "tags": {
+    "addr:city": "Shrewsbury",
+    "addr:housenumber": "6",
+    "addr:postcode": "SY1 1LA",
+    "addr:street": "The Square",
+    "amenity": "bar",
+    "breakfast": "yes",
+    "coffee": "yes",
+    "fhrs:authority": "Shropshire",
+    "fhrs:id": "1407308",
+    "fhrs:local_authority_id": "21/00869/COMM",
+    "food": "yes",
+    "name": "The Cat's Pyjamas",
+    "opening_hours": "Mo-Th 08:00-18:00; Fr-Sa 08:00-20:00; Su 09:00-18:00",
+    "website": "https://catspjscoffee.com/"
+  }
+},
+{
+  "type": "node",
+  "id": 4697592113,
+  "lat": 52.7081123,
+  "lon": -2.7547652,
+  "tags": {
+    "addr:city": "Shrewsbury",
+    "addr:housenumber": "10",
+    "addr:postcode": "SY1 1HD",
+    "addr:street": "Mardol Head",
+    "disused:amenity": "pub",
+    "fhrs:authority": "Shropshire",
+    "fhrs:local_authority_id": "14/00561/COMM",
+    "name": "The Lanterns Protection",
+    "outdoor_seating": "no",
+    "real_ale": "yes",
+    "smoking": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 5059311416,
+  "lat": 52.7061895,
+  "lon": -2.7512123,
+  "tags": {
+    "addr:city": "Shrewsbury",
+    "addr:postcode": "SY1 1XA",
+    "addr:street": "Barracks Passage",
+    "amenity": "pub",
+    "brand": "Joule's",
+    "brand:wikidata": "Q141794739",
+    "facebook": "henrytudorinn",
+    "fhrs:authority": "Shropshire",
+    "fhrs:id": "1537557",
+    "fhrs:local_authority_id": "22/00622/COMM",
+    "food": "yes",
+    "name": "Henry Tudor Inn",
+    "old_name": "Old Lion Tap",
+    "source:addr": "FHRS Open Data",
+    "website": "https://henrytudorinn.com/",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 6022652355,
+  "lat": 52.7098005,
+  "lon": -2.7512410,
+  "tags": {
+    "addr:city": "Shrewsbury",
+    "addr:housenumber": "16-17",
+    "addr:postcode": "SY1 2BB",
+    "addr:street": "Castle Street",
+    "amenity": "pub",
+    "fhrs:authority": "Shropshire",
+    "fhrs:id": "1969971",
+    "fhrs:local_authority_id": "21/01257/COMM",
+    "instagram": "lucky_shot_sy1",
+    "level": "0",
+    "name": "Lucky Shot",
+    "old_name": "Moose",
+    "operator": "Dough and Oil",
+    "source": "survey",
+    "source:addr": "FHRS Open Data"
+  }
+},
+{
+  "type": "node",
+  "id": 6516122638,
+  "lat": 52.7109908,
+  "lon": -2.7505691,
+  "tags": {
+    "addr:city": "Shrewsbury",
+    "addr:housename": "Glouglou",
+    "addr:housenumber": "17A",
+    "addr:postcode": "SY1 2AB",
+    "addr:street": "Castle Gates",
+    "amenity": "bar",
+    "bar": "wine",
+    "contact:facebook": "https://www.facebook.com/glouglousy1",
+    "contact:instagram": "https://www.instagram.com/glouglou_sy1/",
+    "email": "hello@glouglou.uk",
+    "fhrs:authority": "Shropshire",
+    "fhrs:id": "1136801",
+    "fhrs:local_authority_id": "18/00252/COMM",
+    "level": "0",
+    "name": "Glou Glou",
+    "phone": "+44 1743 246888",
+    "source:addr": "FHRS Open Data",
+    "website": "https://glouglou.uk/",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 7059595550,
+  "lat": 52.7113657,
+  "lon": -2.7504632,
+  "tags": {
+    "addr:city": "Shrewsbury",
+    "addr:housenumber": "13",
+    "addr:postcode": "SY1 2AB",
+    "addr:street": "Castle Gates",
+    "amenity": "pub",
+    "contact:facebook": "https://www.facebook.com/tapandcan",
+    "contact:instagram": "https://www.instagram.com/tapandcan",
+    "email": "info@tapandcan.co.uk",
+    "fhrs:authority": "Shropshire",
+    "fhrs:id": "1214773",
+    "fhrs:local_authority_id": "19/00503/COMM",
+    "name": "Tap and Can",
+    "opening_hours": "We-Th 17:00-23:00, Fr 16:00-23:00, Sa 12:00-23:00, Su 12:00-18:00",
+    "source:addr": "FHRS Open Data",
+    "website": "https://www.tapandcan.co.uk/home-1"
+  }
+},
+{
+  "type": "node",
+  "id": 8954055212,
+  "lat": 52.7108860,
+  "lon": -2.7539569,
+  "tags": {
+    "addr:city": "Shrewsbury",
+    "addr:postcode": "SY1 1PG",
+    "addr:street": "Smithfield Road",
+    "amenity": "bar",
+    "bar": "yes",
+    "fhrs:authority": "Shropshire",
+    "name": "Venue 7",
+    "outdoor_seating": "yes",
+    "source:addr": "FHRS Open Data"
+  }
+},
+{
+  "type": "node",
+  "id": 9079361557,
+  "lat": 52.7096116,
+  "lon": -2.7512060,
+  "tags": {
+    "addr:city": "Shrewsbury",
+    "addr:housenumber": "30-31",
+    "addr:postcode": "SY1 2BQ",
+    "addr:street": "Castle Street",
+    "amenity": "bar",
+    "building:levels": "2",
+    "contact:instagram": "https://www.instagram.com/oilnightlong/",
+    "email": "bar@oilnightlong.co.uk",
+    "fhrs:authority": "Shropshire",
+    "fhrs:id": "1219769",
+    "fhrs:local_authority_id": "19/00654/COMM",
+    "level": "0",
+    "name": "OIL",
+    "source:addr": "FHRS Open Data",
+    "website": "https://www.oilnightlong.co.uk/"
+  }
+},
+{
+  "type": "node",
+  "id": 9570582498,
+  "lat": 52.7090399,
+  "lon": -2.7561242,
+  "tags": {
+    "addr:city": "Shrewsbury",
+    "addr:housenumber": "20A-21",
+    "addr:street": "Mardol",
+    "amenity": "bar",
+    "facebook": "Roughdraftshrewsbury",
+    "instagram": "roughdraftshrewsbury",
+    "level": "0",
+    "name": "Rough Draft"
+  }
+},
+{
+  "type": "node",
+  "id": 10094817173,
+  "lat": 52.7074826,
+  "lon": -2.7513421,
+  "tags": {
+    "addr:city": "Shrewsbury",
+    "addr:country": "GB",
+    "addr:housenumber": "11",
+    "addr:postcode": "SY1 1EN",
+    "addr:street": "Dogpole",
+    "amenity": "bar",
+    "facebook": "cromwellstaphouse",
+    "fhrs:authority": "Shropshire",
+    "fhrs:id": "1563028",
+    "fhrs:local_authority_id": "22/00753/COMM",
+    "name": "Cromwell's Tap House",
+    "tourism": "hotel"
+  }
+},
+{
+  "type": "node",
+  "id": 11012577289,
+  "lat": 52.7077291,
+  "lon": -2.7557575,
+  "tags": {
+    "addr:city": "Shrewsbury",
+    "addr:floor": "Gallery Level",
+    "addr:housename": "Market Hall",
+    "addr:postcode": "SY1 1HQ",
+    "addr:street": "Claremont Street",
+    "addr:unit": "45",
+    "amenity": "bar",
+    "check_date": "2026-03-16",
+    "email": "hello@theshrewsburygin.co.uk",
+    "fhrs:authority": "Shropshire",
+    "fhrs:id": "1009436",
+    "fhrs:local_authority_id": "17/00238/COMM",
+    "level": "2",
+    "name": "Gindifferent",
+    "note": "Cocktails and bottle shop. Also has a popup bar outside the markethall",
+    "website": "https://www.theshrewsburygin.co.uk"
+  }
+},
+{
+  "type": "node",
+  "id": 11335570482,
+  "lat": 52.7082337,
+  "lon": -2.7530488,
+  "tags": {
+    "addr:city": "Shrewsbury",
+    "addr:housenumber": "16-17",
+    "addr:postcode": "SY1 1UW",
+    "addr:street": "Butcher Row",
+    "amenity": "bar",
+    "fhrs:authority": "Shropshire",
+    "fhrs:id": "81463",
+    "fhrs:local_authority_id": "198827",
+    "level": "0",
+    "name": "The Libertine",
+    "operator": "The Libertine Group",
+    "phone": "+441743 247874",
+    "website": "https://www.the-libertine.co.uk/"
+  }
+},
+{
+  "type": "node",
+  "id": 11335570484,
+  "lat": 52.7083390,
+  "lon": -2.7529791,
+  "tags": {
+    "addr:city": "Shrewsbury",
+    "addr:housenumber": "3",
+    "addr:postcode": "SY1 1UW",
+    "addr:street": "Butcher Row",
+    "amenity": "bar",
+    "drink:wine": "yes",
+    "food": "yes",
+    "name": "Mason's",
+    "opening_hours": "Tu 12:00-18:00; We-Sa 12:00-21:00",
+    "website": "https://masonsshrewsbury.uk/"
+  }
+},
+{
+  "type": "node",
+  "id": 12504402580,
+  "lat": 52.7075130,
+  "lon": -2.7450921,
+  "tags": {
+    "addr:city": "Shrewsbury",
+    "addr:housenumber": "18-21",
+    "addr:street": "Abbey Foregate",
+    "amenity": "bar",
+    "facebook": "c21Shrewsbury",
+    "level": "0",
+    "min_age": "18",
+    "name": "C21"
+  }
+},
+{
+  "type": "node",
+  "id": 12672758143,
+  "lat": 52.7094675,
+  "lon": -2.7569689,
+  "tags": {
+    "addr:city": "Shrewsbury",
+    "addr:country": "GB",
+    "addr:postcode": "SY1 1PU",
+    "addr:street": "Mardol",
+    "amenity": "pub",
+    "brand": "Wetherspoon",
+    "brand:wikidata": "Q6109362",
+    "cider": "real",
+    "dog": "no",
+    "fhrs:authority": "Shropshire",
+    "fhrs:id": "103899",
+    "fhrs:local_authority_id": "35118",
+    "food": "yes",
+    "name": "The Shrewsbury Hotel",
+    "outdoor_seating": "yes",
+    "parking": "yes",
+    "real_ale": "yes",
+    "toilets": "yes",
+    "toilets:wheelchair": "yes",
+    "website": "https://www.jdwetherspoon.com/pubs/the-shrewsbury-hotel-shrewsbury/",
+    "website:menu": "https://order.jdwetherspoon.com/venue/jdw/777/menus",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 12672758165,
+  "lat": 52.7092524,
+  "lon": -2.7573755,
+  "tags": {
+    "addr:city": "Shrewsbury",
+    "addr:country": "GB",
+    "addr:housenumber": "17a",
+    "addr:postcode": "SY1 1QU",
+    "addr:street": "Hill's Lane",
+    "amenity": "bar",
+    "bar": "cocktail;beer",
+    "facebook": "barkandbiteuk",
+    "fhrs:authority": "Shropshire",
+    "fhrs:id": "722401",
+    "fhrs:local_authority_id": "202352",
+    "name": "Bark + Bite",
+    "outdoor_seating": "no",
+    "smoking": "outside"
+  }
+},
+{
+  "type": "node",
+  "id": 13907589705,
+  "lat": 52.7081836,
+  "lon": -2.7527012,
+  "tags": {
+    "addr:city": "Shrewsbury",
+    "addr:housenumber": "7",
+    "addr:postcode": "SY1 1UW",
+    "addr:street": "Butcher Row",
+    "amenity": "pub",
+    "brand": "Marston's",
+    "brand:wikidata": "Q6773982",
+    "fhrs:authority": "Shropshire",
+    "fhrs:id": "1109456",
+    "fhrs:local_authority_id": "19/00075/COMM",
+    "level": "0",
+    "name": "The Bull Inn",
+    "outdoor_seating": "yes",
+    "source": "local_knowledge",
+    "website": "https://www.bullinnshrewsbury.com/"
+  }
+},
+{
+  "type": "node",
+  "id": 14184674462,
+  "lat": 52.7056994,
+  "lon": -2.7496649,
+  "tags": {
+    "addr:city": "Shrewsbury",
+    "addr:housenumber": "5-6",
+    "addr:postcode": "SY1 1XL",
+    "addr:street": "Saint Julian's Friars",
+    "amenity": "pub",
+    "beer_garden": "yes",
+    "brand": "Marston's",
+    "brand:wikidata": "Q6773982",
+    "fhrs:authority": "Shropshire",
+    "fhrs:id": "52711",
+    "fhrs:local_authority_id": "119309",
+    "name": "The Hop & Friar",
+    "opening_hours": "Mo-Sa 11:00-22:00; Su 12:00-22:00",
+    "source": "Bing;local_survey"
+  }
+},
+{
+  "type": "node",
+  "id": 14340625474,
+  "lat": 52.7108988,
+  "lon": -2.7577023,
+  "tags": {
+    "addr:city": "Shrewsbury",
+    "addr:postcode": "SY3 8FT",
+    "addr:street": "Theatre Severn",
+    "amenity": "bar",
+    "level": "1",
+    "name": "The Chapel Bar",
+    "opening_hours": "\"Around performances\""
+  }
+},
+{
+  "type": "node",
+  "id": 14341817360,
+  "lat": 52.7068867,
+  "lon": -2.7516408,
+  "tags": {
+    "addr:city": "Shrewsbury",
+    "addr:housenumber": "5",
+    "addr:postcode": "SY1 1UT",
+    "addr:street": "Wyle Cop",
+    "amenity": "bar",
+    "contact:instagram": "lupo_shropshire",
+    "food": "yes",
+    "level": "0",
+    "name": "Lupo",
+    "opening_hours": "Mo,We 10:00-22:00; Th-Sa 10:00-23:00; Su 10:00-20:30"
+  }
+},
+{
+  "type": "way",
+  "id": 23650081,
+  "center": {
+    "lat": 52.7113394,
+    "lon": -2.7519098
+  },
+  "tags": {
+    "addr:city": "Shrewsbury",
+    "addr:housename": "The Albert Hotel",
+    "addr:housenumber": "14",
+    "addr:postcode": "SY1 1PB",
+    "addr:street": "Smithfield Road",
+    "amenity": "pub",
+    "email": "info@thealb.co.uk",
+    "fhrs:authority": "Shropshire",
+    "fhrs:id": "463245",
+    "fhrs:local_authority_id": "35652",
+    "indoor_seating": "yes",
+    "name": "The Alb",
+    "opening_hours": "Mo-Su 12:00-23:00",
+    "opening_hours:kitchen": "Mo-Su 12:00-15:00,17:00-21:00",
+    "outdoor_seating": "yes",
+    "phone": "+44 1743 367600",
+    "source": "knowledge;extrapolation",
+    "source:addr": "FHRS Open Data",
+    "website": "http://www.thealb.co.uk/"
+  }
+},
+{
+  "type": "way",
+  "id": 49403802,
+  "center": {
+    "lat": 52.7153127,
+    "lon": -2.7529926
+  },
+  "tags": {
+    "addr:city": "Shrewsbury",
+    "addr:country": "GB",
+    "addr:housenumber": "51",
+    "addr:postcode": "SY1 2DP",
+    "addr:street": "Coton Hill",
+    "amenity": "pub",
+    "fhrs:authority": "Shropshire",
+    "fhrs:id": "1470131",
+    "fhrs:local_authority_id": "22/00227/COMM",
+    "landuse": "retail",
+    "name": "The Bird in Hand",
+    "outdoor_seating": "yes",
+    "real_ale": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 116582538,
+  "center": {
+    "lat": 52.7059721,
+    "lon": -2.7497567
+  },
+  "tags": {
+    "addr:city": "Shrewsbury",
+    "addr:housenumber": "59a",
+    "addr:postcode": "SY1 1XJ",
+    "addr:street": "Wyle Cop",
+    "amenity": "bar",
+    "building": "yes",
+    "capacity": "100",
+    "cuisine": "steak_house;burger;sandwich;mediterranean",
+    "delivery": "no",
+    "diet:vegetarian": "yes",
+    "fhrs:authority": "Shropshire",
+    "fhrs:id": "989603",
+    "fhrs:local_authority_id": "17/00174/COMM",
+    "internet_access": "wlan",
+    "name": "House of Grain",
+    "opening_hours": "Mo-Su 11:00-23:00; We-Sa 11:00-24:00",
+    "outdoor_seating": "no",
+    "phone": "+44 1743 384640",
+    "smoking": "outside",
+    "source": "Bing;local_survey",
+    "takeaway": "no",
+    "website": "http://www.houseofgrain.co.uk/"
+  }
+},
+{
+  "type": "way",
+  "id": 118819681,
+  "center": {
+    "lat": 52.7073862,
+    "lon": -2.7567506
+  },
+  "tags": {
+    "addr:city": "Shrewsbury",
+    "addr:housenumber": "1",
+    "addr:postcode": "SY1 1HU",
+    "addr:street": "Bellstone",
+    "amenity": "pub",
+    "building:part": "retail",
+    "fhrs:authority": "Shropshire",
+    "fhrs:id": "1697759",
+    "fhrs:local_authority_id": "24/00108/COMM",
+    "food": "yes",
+    "name": "The Exchange",
+    "smoking": "outside",
+    "source": "Bing",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "way",
+  "id": 118819686,
+  "center": {
+    "lat": 52.7077467,
+    "lon": -2.7571503
+  },
+  "tags": {
+    "addr:city": "Shrewsbury",
+    "addr:housenumber": "15",
+    "addr:postcode": "SY1 1HU",
+    "addr:street": "Bellstone",
+    "amenity": "pub",
+    "building": "yes",
+    "check_date": "2023-10-07",
+    "fhrs:authority": "Shropshire",
+    "fhrs:id": "834079",
+    "fhrs:local_authority_id": "15/00474/COMM",
+    "indoor_seating": "yes",
+    "name": "Loopy Shrew",
+    "old_name": "The Bellstone",
+    "opening_hours": "Mo-Fr 08:00-23:00; Sa 08:00-24:00; Su 08:00-20:00",
+    "outdoor_seating": "yes",
+    "ref:GB:uprn": "200000121739",
+    "source": "Bing",
+    "source:addr": "FHRS Open Data"
+  }
+},
+{
+  "type": "way",
+  "id": 265231352,
+  "center": {
+    "lat": 52.7095133,
+    "lon": -2.7589753
+  },
+  "tags": {
+    "addr:city": "Shrewsbury",
+    "addr:country": "GB",
+    "addr:parentstreet": "Victoria Avenue",
+    "addr:postcode": "SY1 1HH",
+    "addr:street": "Victoria Quay",
+    "amenity": "pub",
+    "building": "yes",
+    "building:levels": "2",
+    "building:material": "brick",
+    "fhrs:authority": "Shropshire",
+    "fhrs:id": "121084",
+    "fhrs:local_authority_id": "49851",
+    "internet_access": "wlan",
+    "name": "The Armoury",
+    "note": "Quite a pleasent place. Good venue for mapping party meeting, I'd guess - Higgy 20080202",
+    "operator": "Brunning & Price Limited",
+    "real_ale": "yes",
+    "roof:material": "roof_tiles",
+    "roof:shape": "gabled",
+    "source": "Bing",
+    "website": "https://www.brunningandprice.co.uk/armoury/"
+  }
+},
+{
+  "type": "way",
+  "id": 314869785,
+  "center": {
+    "lat": 52.7172235,
+    "lon": -2.7462852
+  },
+  "tags": {
+    "addr:city": "Shrewsbury",
+    "addr:country": "GB",
+    "addr:housenumber": "48",
+    "addr:postcode": "SY1 2EZ",
+    "addr:street": "St Michaels Street",
+    "amenity": "pub",
+    "brand": "Joule's",
+    "brand:wikidata": "Q141794739",
+    "building": "yes",
+    "fhrs:authority": "Shropshire",
+    "fhrs:id": "587109",
+    "fhrs:local_authority_id": "201554",
+    "name": "The Dolphin"
+  }
+},
+{
+  "type": "way",
+  "id": 318587475,
+  "center": {
+    "lat": 52.7069913,
+    "lon": -2.7557681
+  },
+  "tags": {
+    "addr:city": "Shrewsbury",
+    "addr:country": "GB",
+    "addr:housenumber": "25",
+    "addr:postcode": "SY1 1NF",
+    "addr:street": "Swan Hill",
+    "amenity": "pub",
+    "building": "retail",
+    "fhrs:authority": "Shropshire",
+    "fhrs:id": "1596907",
+    "fhrs:local_authority_id": "35771",
+    "name": "Admiral Benbow",
+    "outdoor_seating": "yes",
+    "real_ale": "yes",
+    "source": "survey"
+  }
+},
+{
+  "type": "way",
+  "id": 318587478,
+  "center": {
+    "lat": 52.7067777,
+    "lon": -2.7561459
+  },
+  "tags": {
+    "addr:city": "Shrewsbury",
+    "addr:country": "GB",
+    "addr:housenumber": "23",
+    "addr:postcode": "SY1 1NF",
+    "addr:street": "Swan Hill",
+    "amenity": "pub",
+    "building": "yes",
+    "description:floor": "tiled",
+    "facebook": "Coachandhorsesshrewsbury",
+    "fhrs:authority": "Shropshire",
+    "fhrs:local_authority_id": "23/00533/COMM",
+    "name": "The Coach & Horses",
+    "real_ale": "5",
+    "real_cider": "yes",
+    "source": "survey"
+  }
+},
+{
+  "type": "way",
+  "id": 318959237,
+  "center": {
+    "lat": 52.7112835,
+    "lon": -2.7504438
+  },
+  "tags": {
+    "addr:city": "Shrewsbury",
+    "addr:housenumber": "14",
+    "addr:postcode": "SY1 2AB",
+    "addr:street": "Castle Gates",
+    "amenity": "pub",
+    "brand": "Marston's",
+    "brand:wikidata": "Q6773982",
+    "building:part": "public",
+    "contact:facebook": "https://www.facebook.com/bullonthegates",
+    "contact:instagram": "https://www.instagram.com/bullonthegates",
+    "fhrs:authority": "Shropshire",
+    "fhrs:id": "1659142",
+    "fhrs:local_authority_id": "23/00689/COMM",
+    "name": "The Bulls Head",
+    "phone": "+44 1743 588773",
+    "ref:GB:uprn": "200000123485;10014533021",
+    "source:addr": "FHRS Open Data"
+  }
+},
+{
+  "type": "way",
+  "id": 318959239,
+  "center": {
+    "lat": 52.7111236,
+    "lon": -2.7503893
+  },
+  "tags": {
+    "addr:city": "Shrewsbury",
+    "addr:country": "GB",
+    "addr:housenumber": "16",
+    "addr:postcode": "SY1 2AB",
+    "addr:street": "Castle Gates",
+    "amenity": "pub",
+    "fhrs:authority": "Shropshire",
+    "fhrs:id": "125626",
+    "fhrs:local_authority_id": "54123",
+    "name": "Castle Vaults",
+    "outdoor_seating": "yes",
+    "smoking": "outside",
+    "source:addr": "FHRS Open Data"
+  }
+},
+{
+  "type": "way",
+  "id": 319419582,
+  "center": {
+    "lat": 52.7035755,
+    "lon": -2.7453433
+  },
+  "tags": {
+    "addr:city": "Shrewsbury",
+    "addr:country": "GB",
+    "addr:housenumber": "18",
+    "addr:postcode": "SY3 7LL",
+    "addr:street": "Belle Vue Road",
+    "amenity": "pub",
+    "brand": "Marston's",
+    "brand:wikidata": "Q6773982",
+    "building": "retail",
+    "fhrs:authority": "Shropshire",
+    "fhrs:id": "1537556",
+    "fhrs:local_authority_id": "22/00621/COMM",
+    "name": "Boars Head Inn",
+    "website": "https://www.boarsheadshrewsbury.co.uk/"
+  }
+},
+{
+  "type": "way",
+  "id": 368673575,
+  "center": {
+    "lat": 52.7149143,
+    "lon": -2.7431333
+  },
+  "tags": {
+    "amenity": "pub",
+    "building": "yes",
+    "name": "The Telegraph"
+  }
+},
+{
+  "type": "way",
+  "id": 454944086,
+  "center": {
+    "lat": 52.7130017,
+    "lon": -2.7451669
+  },
+  "tags": {
+    "addr:city": "Shrewsbury",
+    "addr:country": "GB",
+    "addr:housenumber": "20",
+    "addr:postcode": "SY1 2JA",
+    "addr:street": "Severn Street",
+    "amenity": "pub",
+    "brand": "Marston's",
+    "brand:wikidata": "Q6773982",
+    "building": "yes",
+    "fhrs:authority": "Shropshire",
+    "fhrs:id": "1429720",
+    "fhrs:local_authority_id": "42839",
+    "jukebox": "yes",
+    "name": "The Dog And Pheasant",
+    "real_ale": "5",
+    "real_fire": "yes",
+    "ref:GB:uprn": "100070055434"
+  }
+},
+{
+  "type": "way",
+  "id": 458917677,
+  "center": {
+    "lat": 52.7094335,
+    "lon": -2.7595084
+  },
+  "tags": {
+    "addr:city": "Shrewsbury",
+    "addr:country": "GB",
+    "addr:parentstreet": "Victoria Avenue",
+    "addr:postcode": "SY1 1HH",
+    "addr:street": "Victoria Quay",
+    "amenity": "bar",
+    "building": "yes",
+    "building:levels": "2",
+    "building:material": "brick",
+    "cuisine": "italian",
+    "name": "Romolo Restaurant & Lounge",
+    "ref:GB:uprn": "10011839700",
+    "roof:material": "roof_tiles",
+    "roof:shape": "gabled",
+    "source": "knowledge",
+    "source:addr": "website",
+    "website": "http://www.romolo.co.uk"
+  }
+},
+{
+  "type": "way",
+  "id": 474034120,
+  "center": {
+    "lat": 52.7074051,
+    "lon": -2.7550810
+  },
+  "tags": {
+    "addr:city": "Shrewsbury",
+    "addr:country": "GB",
+    "addr:housenumber": "4-5",
+    "addr:postcode": "SY1 1LE",
+    "addr:street": "Market Street",
+    "amenity": "bar",
+    "building": "yes",
+    "cafe": "yes",
+    "fhrs:authority": "Shropshire",
+    "fhrs:id": "1672638",
+    "fhrs:local_authority_id": "23/00782/COMM",
+    "name": "The Ol’Chemist",
+    "ref:GB:uprn": "200000119999;100071368818;10095711401"
+  }
+},
+{
+  "type": "way",
+  "id": 493965914,
+  "center": {
+    "lat": 52.7019186,
+    "lon": -2.7466996
+  },
+  "tags": {
+    "addr:city": "Shrewsbury",
+    "addr:country": "GB",
+    "addr:housenumber": "55",
+    "addr:postcode": "SY3 7LN",
+    "addr:street": "Belle Vue Road",
+    "amenity": "pub",
+    "building": "yes",
+    "fhrs:authority": "Shropshire",
+    "fhrs:id": "1081180",
+    "fhrs:local_authority_id": "34536",
+    "name": "The Masonic Arms"
+  }
+},
+{
+  "type": "way",
+  "id": 561854227,
+  "center": {
+    "lat": 52.7064584,
+    "lon": -2.7503320
+  },
+  "tags": {
+    "addr:housenumber": "22",
+    "addr:postcode": "SY1 1XB",
+    "addr:street": "Wyle Cop",
+    "amenity": "pub",
+    "building": "pub",
+    "contact:facebook": "https://www.facebook.com/nagsheadshrewsbury/",
+    "description:floor": "tiled",
+    "fhrs:authority": "Shropshire",
+    "fhrs:id": "759483",
+    "fhrs:local_authority_id": "35912",
+    "min_age": "22",
+    "name": "The Nag's Head",
+    "outdoor_seating": "yes",
+    "real_ale": "4 or so",
+    "source:addr": "FHRS Open Data",
+    "wikidata": "Q26546734"
+  }
+},
+{
+  "type": "way",
+  "id": 566437683,
+  "center": {
+    "lat": 52.6978328,
+    "lon": -2.7498066
+  },
+  "tags": {
+    "addr:city": "Shrewsbury",
+    "addr:country": "GB",
+    "addr:housenumber": "147",
+    "addr:postcode": "SY3 7NN",
+    "addr:street": "Belle Vue Road",
+    "amenity": "pub",
+    "brand": "Marston's",
+    "brand:wikidata": "Q6773982",
+    "building": "pub",
+    "fhrs:authority": "Shropshire",
+    "fhrs:id": "1693404",
+    "fhrs:local_authority_id": "24/00083/COMM",
+    "name": "The Grove",
+    "ref:GB:uprn": "100071403126;10014528636",
+    "website": "https://www.grovehotelshrewsbury.co.uk/"
+  }
+},
+{
+  "type": "way",
+  "id": 566443715,
+  "center": {
+    "lat": 52.6994196,
+    "lon": -2.7486520
+  },
+  "tags": {
+    "addr:city": "Shrewsbury",
+    "addr:country": "GB",
+    "addr:housenumber": "115-117",
+    "addr:postcode": "SY3 7NJ",
+    "addr:street": "Belle Vue Road",
+    "building": "pub",
+    "disused:amenity": "pub",
+    "fhrs:authority": "Shropshire",
+    "fhrs:id": "769638",
+    "fhrs:local_authority_id": "202219",
+    "name": "The Belle Vue Tavern",
+    "note": "Closed July 2025, looking for new landlords",
+    "operator": "Admiral Taverns",
+    "ref:GB:uprn": "10014533632;100071220113;200000122869"
+  }
+},
+{
+  "type": "way",
+  "id": 586721075,
+  "center": {
+    "lat": 52.7079056,
+    "lon": -2.7518578
+  },
+  "tags": {
+    "addr:city": "Shrewsbury",
+    "addr:country": "GB",
+    "addr:housenumber": "1",
+    "addr:postcode": "SY1 1UG",
+    "addr:street": "Church Street",
+    "amenity": "pub",
+    "brand": "Marston's",
+    "brand:wikidata": "Q6773982",
+    "building:part": "yes",
+    "check_date": "2026-03-16",
+    "email": "loggerheads.shrewsbury@phoenixpub.co.uk",
+    "fhrs:authority": "Shropshire",
+    "fhrs:id": "232198",
+    "fhrs:local_authority_id": "199758",
+    "min_age": "25",
+    "name": "The Loggerheads",
+    "phone": "+44 1743 362398",
+    "source": "knowledge",
+    "source:addr": "FHRS Open Data",
+    "website": "https://www.loggerheadsshrewsbury.co.uk",
+    "wheelchair": "limited",
+    "wikidata": "Q26561108"
+  }
+},
+{
+  "type": "way",
+  "id": 591189448,
+  "center": {
+    "lat": 52.7088423,
+    "lon": -2.7637034
+  },
+  "tags": {
+    "addr:city": "Shrewsbury",
+    "addr:country": "GB",
+    "addr:postcode": "SY3 8JQ",
+    "addr:street": "New Street",
+    "amenity": "pub",
+    "beer_garden": "yes",
+    "fhrs:authority": "Shropshire",
+    "fhrs:id": "520773",
+    "fhrs:local_authority_id": "201255",
+    "food": "yes",
+    "name": "The Boat House Inn",
+    "opening_hours": "Mo-Su 11:00-23:00",
+    "postal_code": "SY3 8JQ",
+    "real_ale": "yes",
+    "wikidata": "Q26560681"
+  }
+},
+{
+  "type": "way",
+  "id": 591251842,
+  "center": {
+    "lat": 52.7081506,
+    "lon": -2.7562605
+  },
+  "tags": {
+    "addr:city": "Shrewsbury",
+    "addr:country": "GB",
+    "addr:housenumber": "5-6",
+    "addr:postcode": "SY1 1QG",
+    "addr:street": "Claremont Street",
+    "amenity": "bar",
+    "building": "retail",
+    "facebook": "ClaremontSocialTap",
+    "fhrs:authority": "Shropshire",
+    "fhrs:id": "1582015",
+    "fhrs:local_authority_id": "22/00595/COMM",
+    "name": "Claremont Social Tap",
+    "opening_hours": "Mo-Th 11:00-23:00; Fr 11:00-00:00; Sa 10:00-00:00; Su 10:00-23:00",
+    "ref:GB:uprn": "100071368490",
+    "source": "Bing"
+  }
+},
+{
+  "type": "way",
+  "id": 631032349,
+  "center": {
+    "lat": 52.7065948,
+    "lon": -2.7522828
+  },
+  "tags": {
+    "addr:city": "Shrewsbury",
+    "addr:country": "GB",
+    "addr:housenumber": "1",
+    "addr:postcode": "SY1 1SZ",
+    "addr:street": "Milk Street",
+    "amenity": "pub",
+    "brand": "Marston's",
+    "brand:wikidata": "Q6773982",
+    "building": "yes",
+    "fhrs:authority": "Shropshire",
+    "fhrs:id": "103995",
+    "fhrs:local_authority_id": "35215",
+    "food": "yes",
+    "name": "The Old Post Office",
+    "source:addr": "FHRS Open Data",
+    "wikidata": "Q17550610"
+  }
+},
+{
+  "type": "way",
+  "id": 694148612,
+  "center": {
+    "lat": 52.7015161,
+    "lon": -2.7444791
+  },
+  "tags": {
+    "addr:city": "Shrewsbury",
+    "addr:country": "GB",
+    "addr:housenumber": "36",
+    "addr:postcode": "SY3 7NZ",
+    "addr:street": "Bynner Street",
+    "amenity": "pub",
+    "bowls": "yes",
+    "darts": "yes",
+    "fhrs:authority": "Shropshire",
+    "fhrs:id": "1662023",
+    "fhrs:local_authority_id": "23/00716/COMM",
+    "landuse": "retail",
+    "name": "Prince of Wales",
+    "opening_hours": "Mo-Fr 17:00-23:00, Fr-Sa 12:00-24:00; Su 12:00-23:00",
+    "outdoor_seating": "yes",
+    "real_ale": "yes",
+    "real_cider": "yes",
+    "real_fire": "yes",
+    "real_mild": "yes",
+    "smoking": "outside",
+    "takeaway": "yes",
+    "website": "https://theprince.pub",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "way",
+  "id": 847980517,
+  "center": {
+    "lat": 52.7078446,
+    "lon": -2.7444385
+  },
+  "tags": {
+    "addr:city": "Shrewsbury",
+    "addr:housenumber": "25-28",
+    "addr:postcode": "SY2 6BT",
+    "addr:street": "Abbey Foregate",
+    "amenity": "pub",
+    "building:part": "pub",
+    "fhrs:authority": "Shropshire",
+    "fhrs:id": "409051",
+    "fhrs:local_authority_id": "199826",
+    "loc_name": "The Crown at Abbey Foregate",
+    "name": "The Crown",
+    "wikidata": "Q26561388"
+  }
+},
+{
+  "type": "way",
+  "id": 849037878,
+  "center": {
+    "lat": 52.7111726,
+    "lon": -2.7580708
+  },
+  "tags": {
+    "addr:city": "Shrewsbury",
+    "addr:country": "GB",
+    "addr:housenumber": "137",
+    "addr:postcode": "SY3 8JX",
+    "addr:street": "Frankwell",
+    "amenity": "pub",
+    "building:levels": "4",
+    "fhrs:authority": "Shropshire",
+    "fhrs:id": "587114",
+    "fhrs:local_authority_id": "201947",
+    "name": "Anchor Inn",
+    "opening_hours": "Mo,Th-Sa 12:00-24:00; Tu,We,Su 12:00-23:00",
+    "roof:levels": "1",
+    "roof:shape": "gabled",
+    "wikidata": "Q26539880"
+  }
+},
+{
+  "type": "way",
+  "id": 849037885,
+  "center": {
+    "lat": 52.7109842,
+    "lon": -2.7586151
+  },
+  "tags": {
+    "addr:city": "Shrewsbury",
+    "addr:country": "GB",
+    "addr:housenumber": "128",
+    "addr:postcode": "SY3 8JX",
+    "addr:street": "Frankwell",
+    "amenity": "bar",
+    "building:part": "retail",
+    "cuisine": "thai",
+    "fhrs:authority": "Shropshire",
+    "fhrs:id": "1197798",
+    "fhrs:local_authority_id": "19/00446/COMM",
+    "food": "yes",
+    "name": "Coolock Irish Bar",
+    "opening_hours": "Mo-Su 12:00-23:00; Fr,Sa 12:00-00:00",
+    "phone": "+44 1743 641468",
+    "roof:shape": "gabled"
+  }
+},
+{
+  "type": "way",
+  "id": 856905177,
+  "center": {
+    "lat": 52.7109606,
+    "lon": -2.7600236
+  },
+  "tags": {
+    "addr:city": "Shrewsbury",
+    "addr:country": "GB",
+    "addr:postcode": "SY3 8JY",
+    "addr:street": "Frankwell",
+    "amenity": "pub",
+    "fhrs:authority": "Shropshire",
+    "fhrs:id": "759481",
+    "fhrs:local_authority_id": "34898",
+    "name": "The Wheatsheaf",
+    "note": "Free House",
+    "opening_hours": "Mo-Su 12:00-00:00",
+    "outdoor_seating": "yes",
+    "phone": "+441743354523",
+    "wikidata": "Q26560765"
+  }
+},
+{
+  "type": "way",
+  "id": 978401468,
+  "center": {
+    "lat": 52.7107360,
+    "lon": -2.7669786
+  },
+  "tags": {
+    "addr:city": "Shrewsbury",
+    "addr:housenumber": "363",
+    "addr:postcode": "SY3 8NL",
+    "addr:street": "Copthorne Road",
+    "amenity": "pub",
+    "brewery": "Joule's Brewery",
+    "darts": "yes",
+    "dog": "yes",
+    "fhrs:authority": "Shropshire",
+    "fhrs:id": "103420",
+    "fhrs:local_authority_id": "34742",
+    "food": "yes",
+    "landuse": "retail",
+    "name": "Bricklayers Arms",
+    "opening_hours": "Mo-Su 12:00-22:00",
+    "operator": "Joule's Brewery",
+    "outdoor_seating": "yes",
+    "shuffleboard": "yes",
+    "smoking": "outside",
+    "toilets": "yes",
+    "website": "https://www.joulesbrewery.co.uk/our-taphouses/our-pub-list/bricklayers-arms"
+  }
+},
+{
+  "type": "way",
+  "id": 1004504820,
+  "center": {
+    "lat": 52.7087418,
+    "lon": -2.7559181
+  },
+  "tags": {
+    "addr:city": "Shrewsbury",
+    "addr:country": "GB",
+    "addr:housenumber": "15-16",
+    "addr:postcode": "SY1 1PY",
+    "addr:street": "Mardol",
+    "amenity": "bar",
+    "bar": "cocktail",
+    "building": "retail",
+    "fhrs:authority": "Shropshire",
+    "fhrs:id": "1085460",
+    "fhrs:local_authority_id": "18/00155/COMM",
+    "name": "Ten & Six"
+  }
+},
+{
+  "type": "way",
+  "id": 1034924036,
+  "center": {
+    "lat": 52.7100036,
+    "lon": -2.7553795
+  },
+  "tags": {
+    "addr:city": "Shrewsbury",
+    "addr:housename": "The Salopian",
+    "addr:postcode": "SY1 1PW",
+    "addr:street": "Smithfield Road",
+    "amenity": "pub",
+    "building": "yes",
+    "cider": "real",
+    "fhrs:authority": "Shropshire",
+    "fhrs:id": "126291",
+    "fhrs:local_authority_id": "55205",
+    "floor:material": "lino",
+    "name": "The Salopian Bar",
+    "old_name": "The Proud Salopian",
+    "outdoor_seating": "seperate",
+    "real_ale": "8 or so",
+    "source:addr": "FHRS Open Data"
+  }
+},
+{
+  "type": "way",
+  "id": 1037135246,
+  "center": {
+    "lat": 52.7088354,
+    "lon": -2.7518244
+  },
+  "tags": {
+    "addr:city": "Shrewsbury",
+    "addr:country": "GB",
+    "addr:postcode": "SY1 1DX",
+    "addr:street": "St Mary's Place",
+    "amenity": "pub",
+    "building": "pub",
+    "fhrs:authority": "Shropshire",
+    "fhrs:id": "104605",
+    "fhrs:local_authority_id": "35713",
+    "name": "The Yorkshire House",
+    "opening_hours": "Mo-Th 11:00-24:00, Fr,Sa 11:00-01:00, Su 12:00-24:00"
+  }
+},
+{
+  "type": "way",
+  "id": 1043486580,
+  "center": {
+    "lat": 52.7082705,
+    "lon": -2.7575668
+  },
+  "tags": {
+    "addr:city": "Shrewsbury",
+    "addr:country": "GB",
+    "addr:housenumber": "8",
+    "addr:postcode": "SY1 1QJ",
+    "addr:street": "Barker Street",
+    "amenity": "pub",
+    "fhrs:authority": "Shropshire",
+    "fhrs:id": "194432",
+    "fhrs:local_authority_id": "115774",
+    "food": "no",
+    "music": "yes",
+    "name": "Albert's Shed",
+    "outdoor_seating": "no",
+    "real_ale": "yes",
+    "website": "https://albertsshed.co.uk/",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "way",
+  "id": 1050010606,
+  "center": {
+    "lat": 52.7127433,
+    "lon": -2.7677885
+  },
+  "tags": {
+    "addr:city": "Shrewsbury",
+    "addr:housenumber": "52-54",
+    "addr:postcode": "SY3 8PW",
+    "addr:street": "The Mount",
+    "amenity": "pub",
+    "area": "yes",
+    "fhrs:authority": "Shropshire",
+    "fhrs:id": "759468",
+    "fhrs:local_authority_id": "199750",
+    "level": "0",
+    "name": "Bull In The Barne",
+    "outdoor_seating": "yes",
+    "real_ale": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 1057845901,
+  "center": {
+    "lat": 52.7063185,
+    "lon": -2.7375037
+  },
+  "tags": {
+    "addr:city": "Shrewsbury",
+    "addr:housenumber": "94",
+    "addr:postcode": "SY2 6BD",
+    "addr:street": "Abbey Foregate",
+    "amenity": "pub",
+    "fhrs:authority": "Shropshire",
+    "fhrs:id": "1651200",
+    "fhrs:local_authority_id": "23/00615/COMM",
+    "landuse": "retail",
+    "name": "The Bricklayers Arms",
+    "old_name": "The Brick",
+    "outdoor_seating": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 1248155747,
+  "center": {
+    "lat": 52.7054015,
+    "lon": -2.7450282
+  },
+  "tags": {
+    "addr:housename": "The Seven Stars",
+    "addr:postcode": "SY3 7BP",
+    "addr:street": "Old Coleham",
+    "amenity": "pub",
+    "building": "pub",
+    "name": "The Seven Stars"
+  }
+},
+{
+  "type": "way",
+  "id": 1489814848,
+  "center": {
+    "lat": 52.7117387,
+    "lon": -2.7362636
+  },
+  "tags": {
+    "addr:city": "Shrewsbury",
+    "addr:housenumber": "83",
+    "addr:postcode": "SY2 5AZ",
+    "addr:street": "Monkmoor Road",
+    "amenity": "pub",
+    "cuisine": "indian",
+    "fhrs:authority": "Shropshire",
+    "fhrs:id": "1834092",
+    "fhrs:local_authority_id": "35219",
+    "food": "yes",
+    "name": "The Abbey",
+    "operator": "Vik's Pubs",
+    "website": "https://abbeyshrewsbury.com/"
+  }
+}
+
+  ]
+}

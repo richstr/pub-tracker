@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Photos are excluded so the 25 MB cloud backup quota never blocks the database backup. -->
+<full-backup-content>
+    <exclude domain="file" path="photos/" />
+</full-backup-content>
