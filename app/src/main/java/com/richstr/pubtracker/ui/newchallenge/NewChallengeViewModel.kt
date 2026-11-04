@@ -26,7 +26,7 @@ data class NewChallengeState(
     val hasLocation: Boolean = false,
     val radiusMetres: Int = 1500,
     val includePubs: Boolean = true,
-    val includeBars: Boolean = false,
+    val includeBars: Boolean = true,
     val cameraRequest: CameraRequest? = null,
     val loading: Boolean = false,
     val error: String? = null,
