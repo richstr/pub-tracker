@@ -19,7 +19,9 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
 import androidx.compose.material.icons.automirrored.filled.List
 import androidx.compose.material.icons.filled.Add
+import androidx.compose.material.icons.filled.Close
 import androidx.compose.material.icons.filled.Place
+import androidx.compose.material.icons.filled.Search
 import androidx.compose.material3.Badge
 import androidx.compose.material3.Button
 import androidx.compose.material3.Card
@@ -34,6 +36,7 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
+import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.TopAppBar
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
@@ -71,8 +74,15 @@ fun ChallengeScreen(
     val stateFilters by vm.stateFilters.collectAsStateWithLifecycle()
     val categoryFilters by vm.categoryFilters.collectAsStateWithLifecycle()
     var showMap by rememberSaveable { mutableStateOf(true) }
+    var searchOpen by rememberSaveable { mutableStateOf(false) }
+    var searchQuery by rememberSaveable { mutableStateOf("") }
     var selectedPubId by rememberSaveable { mutableStateOf<String?>(null) }
-    val selected = ui?.pubs?.firstOrNull { it.row.pubId == selectedPubId }
+    val query = searchQuery.trim()
+    val visiblePubs = ui?.pubs.orEmpty().filter { item ->
+        query.isEmpty() || item.row.name.contains(query, ignoreCase = true) ||
+            item.row.street?.contains(query, ignoreCase = true) == true
+    }
+    val selected = visiblePubs.firstOrNull { it.row.pubId == selectedPubId }
 
     Scaffold(
         topBar = {
@@ -82,6 +92,15 @@ fun ChallengeScreen(
                     IconButton(onClick = onBack) { Icon(Icons.AutoMirrored.Filled.ArrowBack, contentDescription = "Back") }
                 },
                 actions = {
+                    IconButton(onClick = {
+                        searchOpen = !searchOpen
+                        if (!searchOpen) searchQuery = ""
+                    }) {
+                        Icon(
+                            if (searchOpen) Icons.Filled.Close else Icons.Filled.Search,
+                            contentDescription = if (searchOpen) "Close search" else "Search pubs",
+                        )
+                    }
                     IconButton(onClick = { showMap = !showMap }) {
                         if (showMap) {
                             Icon(Icons.AutoMirrored.Filled.List, contentDescription = "Show list")
@@ -128,12 +147,30 @@ fun ChallengeScreen(
                 }
             }
 
+            if (searchOpen) {
+                OutlinedTextField(
+                    value = searchQuery,
+                    onValueChange = { searchQuery = it },
+                    placeholder = { Text("Search pubs and bars") },
+                    leadingIcon = { Icon(Icons.Filled.Search, contentDescription = null) },
+                    trailingIcon = {
+                        if (searchQuery.isNotEmpty()) {
+                            IconButton(onClick = { searchQuery = "" }) {
+                                Icon(Icons.Filled.Close, contentDescription = "Clear search")
+                            }
+                        }
+                    },
+                    singleLine = true,
+                    modifier = Modifier.fillMaxWidth().padding(horizontal = 16.dp, vertical = 8.dp),
+                )
+            }
+
             if (showMap) {
                 val c = current.challenge
                 Box(Modifier.weight(1f).fillMaxWidth()) {
                     PubMap(
                         initialCamera = CameraRequest(c.centreLat, c.centreLon, Geo.zoomForRadius(c.radiusMetres, c.centreLat), animate = false),
-                        pins = current.pubs.map { MapPin(it.row.pubId, it.row.name, it.row.lat, it.row.lon, it.state.colorHex) },
+                        pins = visiblePubs.map { MapPin(it.row.pubId, it.row.name, it.row.lat, it.row.lon, it.state.colorHex) },
                         circle = MapCircle(c.centreLat, c.centreLon, c.radiusMetres.toDouble()),
                         onPinClick = { selectedPubId = it },
                         onMapClick = { selectedPubId = null },
@@ -150,10 +187,10 @@ fun ChallengeScreen(
                 }
             } else {
                 LazyColumn(Modifier.weight(1f), contentPadding = PaddingValues(bottom = 96.dp)) {
-                    if (current.pubs.isEmpty()) {
+                    if (visiblePubs.isEmpty()) {
                         item { Text("No pubs match these filters.", Modifier.padding(16.dp)) }
                     }
-                    items(current.pubs, key = { it.row.pubId }) { item ->
+                    items(visiblePubs, key = { it.row.pubId }) { item ->
                         ListItem(
                             headlineContent = { Text(item.row.name) },
                             supportingContent = { Text(describePub(item.row.street, item.row.category, item.row.status)) },
