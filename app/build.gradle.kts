@@ -7,11 +7,11 @@ plugins {
 }
 
 android {
-    namespace = "com.richardstrang.pubtracker"
+    namespace = "com.richstr.pubtracker"
     compileSdk = 37
 
     defaultConfig {
-        applicationId = "com.richardstrang.pubtracker"
+        applicationId = "com.richstr.pubtracker"
         minSdk = 26
         targetSdk = 37
         versionCode = 1
